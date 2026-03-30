@@ -4,6 +4,7 @@
   height: 910px;
   background: url("../images/img_visual01.png") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .visual-inner {
   padding-top: 245px;
@@ -28,4 +29,18 @@
   height: 5px;
   background-color: #ed1c24;
   content: "";
+}
+
+.visual-btn {
+  /* 기본 버튼의 색을 초기화 */
+  all: unset;
+  position: absolute;
+  display: block;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33px;
+  height: 33px;
+  background: url("../images/bg_common.png") no-repeat;
+  background-position: -122px 0px;
 }
