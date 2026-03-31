@@ -42,12 +42,32 @@
     <title>남산알미늄 건설사업부문</title>
     <!-- CSS 링크 연결 -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
+      <!-- QUICK -->
+       <div class="quick">
+        <!-- help -->
+         <div class="help">
+          <a href="#" id="chat">
+            <img src="images/red-hair.png" alt="chat">
+            <span>무엇을 도와드릴까요?</span>
+          </a>
+         </div>
+         <!-- shop -->
+          <a href="#" id="shop">STX</a>
+          <!-- gotop -->
+           <a href="#" id="gotop">↑</a>
+           
+       </div>
       <!-- 상단 -->
       <header class="header">
+      <!-- 헤더 bg -->
+       <div class="header-bg"></div>
         <div class="header-inner">
           <!-- 로고 -->
           <a href="#" class="logo">
@@ -57,7 +77,7 @@
           <nav class="nav">
             <ul class="gnb">
               <li>
-                <a href="#">회사소개</a>
+                <a href="#about-txt" class="aboutMenu">회사소개</a>
                 <ul class="depth2">
                   <li><a href="#">인사말</a></li>
                   <li><a href="#">남선알미늄 건설사업부문</a></li>
@@ -131,14 +151,14 @@
             STX Engineering & Construction
           </h1>
           <p class="visual-txt">세계최고를 향해 STX건설이 힘차게 질주합니다!</p>
-          <a href="#cs"><button class="visual-btn"></button></a>
+          <a href="#news"><button class="visual-btn"></button></a>
         </div>
       </section>
       <!-- 비즈니스 -->
       <section class="business">
         <div class="business-inner inner">
           <!-- 비즈니스 상단 -->
-          <div class="business-top">
+          <div class="business-top" id="business-top">
             <h2 class="business-title">
               NS Engineering & Construction Business
             </h2>
@@ -212,7 +232,7 @@
         </div>
       </section>
       <!-- 뉴스 -->
-      <section class="news">
+      <section class="news" id="news">
         <!-- 배경색 넣기 -->
         <div class="news-bg"></div>
         <div class="news-inner inner">
@@ -320,7 +340,7 @@
           <!-- 회사소개 상단 -->
           <div class="about-top">
             <!-- 왼쪽 -->
-            <div class="about-txt">
+            <div class="about-txt" id="about-txt">
               <h3>ABOUT US</h3>
               <div class="about-sub-txt">
                 <p class="title">
@@ -360,7 +380,21 @@
         </div>
       </section>
       <!-- 하단 -->
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer-inner inner">
+          <div class="footer-wrap">
+            <div class="footer-logo">
+              <img src="images/logo_footer.png" alt="footer-logo">
+            </div>
+            <div class="footer-txt">
+              <address>
+                대구사무소 : (41590) 대구광역시 북구 원대로 128, 연우빌딩 7층 TEL : 053-712-3100 · FAX : 053-712-3199
+              </address>
+              <p class="copy">Copyright ⓒ NS CONSTRUCTION. LTD. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
